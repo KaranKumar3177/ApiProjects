@@ -163,6 +163,43 @@ Booky.get("/publish", (req,res) => {
 
 
 
+   /*
+Route        : "/publish" 
+Description  :  Getting a specific publisher
+methods      :  GET
+parameters   : id
+Access       : Public  
+*/ 
+
+Booky.get("/publish/:id", (req,res) => {
+    const getSpecificPublisher = database.publication.filter(
+        (publication) => publication.id === parseInt(req.params.id) )
+
+        if (getSpecificPublisher.length === 0) {
+            return res.json({error : `No publisher found with the id  : ${req.params.id}`});
+        }
+        return res.json({publication : getSpecificPublisher});
+})
+
+
+
+   /*
+Route        : "/publish" 
+Description  :  Getting a specific publisher
+methods      :  GET
+parameters   : isbn
+Access       : Public  
+*/ 
+ 
+Booky.get("/publish/book/:isbn", (req,res) => {
+    getSpecificPublisher = database.publication.filter(
+        (publication) => publication.books.includes(req.params.isbn))
+
+        if(getSpecificPublisher.length === 0) {
+            return res.json({error : `No publication for the book : ${req.params.isbn}`});
+        }
+            return res.json({publication : getSpecificPublisher});
+})
 
 
 // Creating a server

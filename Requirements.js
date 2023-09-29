@@ -57,8 +57,8 @@
 
 //We need an API :-
 
-//To get all the publications
+//To get all the publications : Done
 
-//To get a specific publication
+//To get a specific publication : Done
 
-//To get a list of publications based on a book
+//To get a list of publications based on a book : Done

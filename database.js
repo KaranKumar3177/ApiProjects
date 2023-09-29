@@ -65,11 +65,13 @@ const publication =
   },
   {
     id: 2,
-    name: "Signet Classics"
+    name: "Signet Classics",
+    books : ["9780451524935"]
   },
   {
     id: 3,
-    name: "Scribner"
+    name: "Scribner",
+    books : ["9780743273565"]
   },
 
 ]
