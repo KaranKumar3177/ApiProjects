@@ -6,7 +6,7 @@
 
 //BOOKS
 
-//ISBN, title, pub date, language, num page, author[], category[]
+//ISBN, title, publish date, language, num page, author[], category[]
 
 
 
@@ -24,6 +24,10 @@
 
 
 //We have to design and code an API over this.
+
+
+
+// ************GET***************
 
 
 //1. BOOKS
@@ -62,3 +66,23 @@
 //To get a specific publication : Done
 
 //To get a list of publications based on a book : Done
+
+
+
+
+
+// *********POST REQUEST***************
+
+// 1. ADD NEW BOOK : DONE
+// 2. ADD NEW AUTHOR : DONE
+// 3. ADD NEW PUBLISHER : Done
+
+
+
+
+/*************PUT REQUEST************
+
+1.  Update Book details if Author is changed.
+*/
+
+

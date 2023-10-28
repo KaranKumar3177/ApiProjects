@@ -4,11 +4,11 @@ const books =
   {
     id: 1,
     title: "To Kill a Mockingbird",
-    isbn: "9780061120084",
+    isbn: "123456",
     language : "en",
     numPage : 250,
-    authorId: [1,2],
-    publicationId: [1],
+    author: [1,2],
+    publication: [1],
     category : ["tech","space","Education"]
   },
   {
@@ -16,8 +16,8 @@ const books =
     title: "1984",
     language : "en, esp, hin",
     isbn: "9780451524935",
-    authorId: 2,
-    publicationId: 2,
+    author: [2],
+    publication: [2],
     category : ["tech","space"]
   },
   {
@@ -25,8 +25,8 @@ const books =
     title: "The Great Gatsby",
     language : "en , jap",
     isbn: "9780743273565",
-    authorId: 3,
-    publicationId: 3,
+    author: 3,
+    publication: [3],
     category : ["tech"]
   },
 
@@ -39,7 +39,7 @@ const author =
   {
     id: 1,
     name: "Harper Lee",
-    books : ["9780061120084"]
+    books : ["123456"]
   },
   {
     id: 2,
@@ -61,18 +61,23 @@ const publication =
   {
     id: 1,
     name: "HarperCollins Publishers",
-    books : ["9780061120084"]
+    books : ["123456"]
   },
   {
     id: 2,
     name: "Signet Classics",
-    books : ["9780451524935"]
+    books : []
   },
   {
     id: 3,
     name: "Scribner",
     books : ["9780743273565"]
   },
+  {
+    id: 4 ,
+    name: "Randomm",
+    books : ["464654"]
+  }
 
 ]
 
