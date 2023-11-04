@@ -1,0 +1,10 @@
+# this files ignores all the files included in it when (gid add . command) is used.
+
+/node_modules 
+#No need to push 
+
+package-lock.json
+# heavy and complex files can create bugs, don't push for now
+
+.env
+# we have sensitive data in env so we dont push it as it can be accessed by one having git access

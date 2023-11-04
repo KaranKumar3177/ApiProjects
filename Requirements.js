@@ -82,7 +82,26 @@
 
 /*************PUT REQUEST************
 
-1.  Update Book details if Author is changed.
+1.  Update Book details if Author is changed. - Done
 */
 
 
+/*****Delete Request **********
+ 
+ 1. Delete a Book : Done
+ 2. Delete Author from book 
+ 3. Delete Author from book and related book from author
+ */
+
+
+ /****** MONGO DB **************  
+  1. Schema : Blueprint of how data has to be constructed
+  2. Mongo Db is Schema less
+  3. but mongoose has schema.
+  4. Mongoose importance :  Validation of data, Relationship with other data
+  5. Model : Document model of mongo db. 
+
+   WorkFlow :
+   
+   First prepare schema -> prepare a Model -> use Them.
+ */
